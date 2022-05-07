@@ -6,7 +6,7 @@ function App() {
 
     // console.log(useState);
     // var val = 'priyanka';
-    const [myName, setMyName] =useState("Priyanka");
+    const [myName, setMyName] =useState("Priyanka thakor");
 
     // const myName = () => {
     //     //  val ="Thakor";
@@ -18,7 +18,7 @@ function App() {
     return (
         <div>
             <h1>Priyanka {myName}</h1>
-            <button className="btn" onClick={()=>setMyName}>
+            <button className="btn" onClick={(e)=>setMyName}>
                 Click me
             </button>
         </div>
