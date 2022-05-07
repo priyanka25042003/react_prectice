@@ -14,7 +14,7 @@ class Render extends React.Component<any,any>{
             return(
                 <div>
                     <h1>User Component </h1>
-                    <button onClick={()=>this.setState({Email:"Thakor@test.com"})} >Update Email</button>
+                    <button onClick={(e)=>this.setState({Email:"Thakor@test.com"})} >Update Email</button>
                 </div>
         
             )

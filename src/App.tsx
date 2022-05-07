@@ -17,7 +17,7 @@ import Component from './component/Method/Component';
 import ComponentWillUnmount from './component/Method/ComponentWillUnmount';
 import UserH from './component/Hook/UserH';
 import StateHook from './component/Hook/StateHook';
-
+// import  from'./'
 
 
  
@@ -27,8 +27,8 @@ function App() {
     <div className="App">
       
       <UserH />
-      {/* <UseEffect /> */}
-      {/* <StateHook /> */}
+      {/* <useEffect /> */}
+      <StateHook />
       {/* <Navbarr /> */}
     </div>
   )
