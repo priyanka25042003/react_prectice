@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Prop(props: any)
  {
   console.log(props.name)

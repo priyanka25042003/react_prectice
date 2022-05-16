@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-
+import '../style.css';
 function App(Props: any) {
   // const [data,setData]=useState("priya")
   const [count, setcount] = useState(0)

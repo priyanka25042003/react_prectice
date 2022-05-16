@@ -1,39 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navbarr from './component/navbarr/navbarr';
-import Prop from './component/prop/prop';
-import User from './component/stat/User';
-import StatClass from './component/stat/statClass';
-import Student from './component/prop/Student';
-import { render } from '@testing-library/react';
-import { setEnvironmentData } from 'worker_threads';
-import Profile from './component/Profile';
-import Login from './component/Login';
-import Members from './component/stat/Members';
-import Constructor from './component/Method/Constructor';
-import Render from './component/Method/Render';
-import Component from './component/Method/Component';
-import ComponentWillUnmount from './component/Method/ComponentWillUnmount';
-import UserH from './component/Hook/UserH';
-import StateHook from './component/Hook/StateHook';
-// import  from'./'
+import Array from './component/Array';
+import BootstrapTable from './component/BootstrapTable';
+import { Table } from "react-bootstrap";
+import NestedArray from './component/NestedArray';
+import ReuseComponent from './component/ReuseComponent';
 
 
- 
+
 function App() {
- 
+  const Users = [
+    {
+      name: 'priya', email: 'priya@gmail.com', contact: "465"
+    },
+    {
+      name: 'kisu', email: 'kisu@gmail.com', contact: "523"
+    },
+    {
+      name: 'mittu', email: 'mittu@gmail.com', contact: "654"
+    },
+    {
+      name: 'golu', email: 'golu@gmail.com', contact: "578"
+    },
+  ]
+
   return (
     <div className="App">
+      {/* <h1>Reuse Component with List</h1> */}
+      {/* {
+        Users.map((item,i) =>
+        <ReuseComponent data={item} />
+        )
+      } */}
       
-      <UserH />
-      {/* <useEffect /> */}
-      <StateHook />
-      {/* <Navbarr /> */}
+<BootstrapTable/>
+
     </div>
-  )
+  );
 }
-
-
 
 export default App;
